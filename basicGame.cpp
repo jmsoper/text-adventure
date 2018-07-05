@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
-
-
+#include "printer.hpp"
 
 std::string getInput(){
   std::string givenInput;
@@ -24,12 +23,17 @@ std::string getLocation(std::string location){
   return prompt;
 }
 
+void printTitleScreen(){
+  printTitle();
+  std::cout << "type in 'exit' to exit at any time. type in 'help' for help. type in 'look around' to get a description of where you are." << std::endl; 
+  printLine();
+}
+
 int main() {
   std::string userInput;
+  printTitleScreen();  
   std::string location = "home"; 
- 
-  std::cout << "welcome to swampland. type in 'exit' to exit at any time. type in 'help' for help. type in 'look around' to get a description of where you are." << std::endl; 
-  
+
   while (userInput != "exit") {
     if (userInput == "look around"){
       std::cout << getLocation(location) << std::endl;

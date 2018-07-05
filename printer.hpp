@@ -1,0 +1,3 @@
+void printTitle();
+
+void printLine();
