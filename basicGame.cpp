@@ -9,7 +9,7 @@ std::string getInput(){
 }
 
 std::string getHelp() {
-  std::string helper = "type in 'exit' to exit at any time. type in 'help' for help. type in 'look around' to get a description of where you are.";
+  std::string helper = "\033[1;36;44m type in 'exit' to exit at any time. type in 'help' for help. type in 'look around' to get a description of where you are.\033[0m\n";
   return helper;
 }
 
